@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/element.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung" rel="stylesheet">
+   <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<section id="header" class="clearfix">
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	<a class="navbar-brand" href="index.html"> <i class="fa fa-firefox"></i> Coffee<br/><span class="p_3">HERKESIN IHTIYACI VAR</span></a>
+	</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				 <ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">ANASAYFA</a></li>
+					<li><a href="details.html">DETAY</a></li>
+					<li><a href="about.html">KAHVEYE DAIR</a></li>
+					<li class="active"><a href="contact.html">ILETISIM</a></li>
+			        <li class="well_1 clearfix"><a href="https://www.facebook.com/bikanakadar" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li class="well_1 clearfix"><a href="https://www.instagram.com/iamcmr0" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li class="well_1 clearfix"><a href="https://twitter.com/cemrezr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		</ul>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</section>
+<section id="contact">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+    <div class="contact_1">
+	 <h2 class="text-center">ILETISIM</h2>
+	</div>
+	<div class="col-sm-4">
+	 <div class="contact_2">
+	  <h1 class="text-center"><i class="fa fa-home"></i></h1>
+	  <h2 class="text-center">Address:</h2>
+	  <p class="text-center"><a href="#">Kadıköy</a></p>
+	 </div>
+	</div>
+	<div class="col-sm-4">
+	 <div class="contact_2">
+	  <h1 class="text-center"><i class="fa fa-phone"></i></h1>
+	  <h2 class="text-center">Telefon:</h2>
+	  <p class="text-center"><a href="#">05456118521</a></p>
+	 </div>
+	</div>
+	<div class="col-sm-4">
+	 <div class="contact_2">
+	  <h1 class="text-center"><i class="fa fa-envelope"></i></h1>
+	  <h2 class="text-center">E-mail:</h2>
+	  <p class="text-center"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank">ozercemre1@gmail.com</a></p>
+	 </div>
+	</div>
+   </div>
+   <div class="col-sm-12 clearfix">
+      <div class="contact_4 clearfix">
+        <h2 class="text-center">Bize Ulaşın</h2>
+      </div>
+   </div>
+   <div class="col-sm-12">
+    <div class="col-sm-6">
+	  <div class="col-sm-12">
+	   	 <div class="footer_main_2 clearfix">
+	       <div class="footer_main_1">
+	     <input type="text" id="ad" class="form-control" placeholder="Adınız*">
+	    </div>
+	   </div>
+	  </div>
+	   <div class="col-sm-12">
+        <div class="footer_main_1">
+	     <input type="text" id="soyad" class="form-control" placeholder="Soyadınız*">
+	   </div>
+      </div>
+	  <div class="col-sm-12">
+       <div class="footer_main_1">
+        <input type="text" id="email" class="form-control" placeholder="Email*">
+       </div>
+     </div>
+	    <div class="col-sm-12">
+         <div class="footer_main_2">
+	      <textarea placeholder="Message*" id="mesaj" class="form-control"></textarea>
+	     </div>
+        </div>
+		 <div class="col-sm-12">
+          <div class="contact_3">
+	       <p class="text-center" onclick="Yaz()"><a href="#">GÖNDER</a></p>
+	     </div>
+        </div>
+	 </div>
+	 <script>
+		function Yaz(){
+			let isim=document.getElementById("ad");
+			let soyisim=document.getElementById("soyad");
+			let eposta=document.getElementById("email");
+			let mesajj=document.getElementById("mesaj");
+
+			alert(" Mesaj gönderildi. \n Gönderenin Adı Soyadı: "+isim.value+" "+soyisim.value+
+			" \n Emaili: "+eposta.value+" \n Gönderilen Mesaj: "+mesajj.value);
+		}
+	 </script>
+	<div class="col-sm-6">
+	 <section id="contact_main">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48192.25951678012!2d29.02185337736622!3d40.981125666414414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac790b17ba89d%3A0xd2d24ea0437a7ee2!2zS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1713688089506!5m2!1str!2str" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    </section>
+	</div>    
+   </div>
+  </div>
+ </div>
+</section>
+<section id="footer_inner">
+ <div class="container">
+  <div class="row">
+   <div class="footer_inner_1">
+    <p class="text-center">CEMRENUR ÖZER</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="updates" class="clearfix">
+	<div class="col-sm-12 space_all">
+	  <div class="col-sm-2 space_all">
+	  <div class="updates_2">
+	   <div class="ih-item square effect10 left_to_right"><a href="#">
+		 <div class="img"><img src="img/cold2.jpg" alt="img"></div>
+		  <div class="info">
+			 <h3>ColdBrew</h3>
+			  <p>Cold brew, kelime anlamı olarak Türkçe karşılığı '”soğuk demleme” anlamındadır.Kalın kahve çekirdeklerinin soğuk su içerisinde beklemesi ile elde edilir.</p>
+		   </div></a></div>
+	  </div>
+	 </div>
+	  <div class="col-sm-2 space_all">
+	  <div class="updates_2">
+	   <div class="ih-item square effect10 left_to_right"><a href="#">
+		 <div class="img"><img src="img/frap.jpg" alt="img"></div>
+		  <div class="info">
+			 <h3>FRAPPE</h3>
+			  <p>Frappé kahvesi, Greek frappé, Nescafé frappé veya sadece frappé, hazır kahveden, su, şeker ve sütten yapılan bir Yunan buzlu kahve içeceğidir. </p>
+		   </div></a></div>
+	  </div>
+	 </div>
+	  <div class="col-sm-2 space_all">
+	  <div class="updates_2">
+	   <div class="ih-item square effect10 left_to_right"><a href="#">
+		 <div class="img"><img src="img/icedmocha.jpg" alt="img"></div>
+		  <div class="info">
+			 <h3>ICED MOCHA</h3>
+			  <p>İced Mocha; hem yumuşacık hem de buz gibi bir kahve içmek isteyenlerin vazgeçilmez tercihlerinden biridir.</p>
+		   </div></a></div>
+	  </div>
+	 </div>
+	  <div class="col-sm-2 space_all">
+	  <div class="updates_2">
+	   <div class="ih-item square effect10 left_to_right"><a href="#">
+		 <div class="img"><img src="img/FreddoEsp.jpg" alt="img"></div>
+		  <div class="info">
+			<h3>FREDDO ESPRESSO</h3>
+			  <p>Freddo Espresso, buz üstüne dökülen bir espresso shot’ının mikser ile köpürtülerek, yine buzlu bir bardağa aktarılması ile hazırlanan Yunan kahvesidir.</p>
+		   </div></a></div>
+	  </div>
+	 </div>
+	  <div class="col-sm-2 space_all">
+	  <div class="updates_2">
+	   <div class="ih-item square effect10 left_to_right"><a href="#">
+		 <div class="img"><img src="img/IcedAmericano.jpg" alt="img"></div>
+		  <div class="info">
+			<h3>ICED AMERICANO</h3>
+			  <p>Kahvesini sütsüz sevenlerin favori tercihlerinden biri olan Iced Americano, bir shot espresso'nun üstüne soğuk su ve buz eklenmesiyle hazırlanıyor.</p>
+		   </div></a></div>
+	  </div>
+	 </div>
+	  <div class="col-sm-2 space_all">
+	  <div class="updates_2">
+	   <div class="ih-item square effect10 left_to_right"><a href="#">
+		 <div class="img"><img src="img/affogato.jpg" alt="img"></div>
+		  <div class="info">
+			<h3>affogato</h3>
+			  <p>Affogato kahve temelli tatlıdır. Genellikle bir kaşık vanilyalı gelato ya da dondurma üzerine sıcak espresso dökülerek hazırlanır. </p>
+		   </div></a></div>
+	  </div>
+	 </div>
+	</div>
+ </section>
+ <section id="footer">
+  <div class="container">
+   <div class="row">
+	<div class="footer_1">
+	 <h2 class="text-center"><a href="#"> <i class="fa fa-firefox"></i> Coffee</a></h2>
+	 <p class="text-center"><span class="p_3">HERKESIN IHTIYACI VAR</span></p>
+	</div>
+	<div class="footer_2">
+	 <p class="text-center">1999'dan Bu Yana Değişmeyen Tek Bilgi Ağı  </p>
+	 <h4 class="text-center">Bize Ulaş: <a href="#">ozercemre1@gmail.com</a></h4>
+	 <ul>
+		 <li><a href="https://www.facebook.com/bikanakadar" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		 <li><a href="https://www.instagram.com/iamcmr0" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		 <li><a href="https://twitter.com/cemrezr" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
+	 </ul>
+	</div>
+   </div>
+  </div>
+ </section>
+ <section id="footer_main">
+  <div class="container">
+   <div class="row">
+	<div class="footer_main_1"><p>©Design by Cemre Özer</p></div>
+   </div>
+  </div>
+ </section>
+<script src="js/classie.js"></script> 
+<script src="js/cbpAnimatedHeader.js"></script>
+</body>
+</html>
